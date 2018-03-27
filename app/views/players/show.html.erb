@@ -1,0 +1,47 @@
+<p>
+  <strong>Name:</strong>
+  <%= @player.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @player.age %>
+</p>
+<p>
+  <strong>size:</strong>
+  <%= @player.size %>
+</p>
+<p>
+  <strong>age:</strong>
+  <%= @player.age %>
+</p>
+<h2>Quests</h2>
+<% @player.quests.each do |quest| %>
+  <p>
+    <strong>title:</strong>
+    <%= quest.title %>
+  </p>
+
+  <p>
+    <strong>quest:</strong>
+    <%= quest.body %>
+  </p>
+<% end %>
+
+<h2>Add a quest:</h2>
+<%= form_with(model: [ @player, @player.quests.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>

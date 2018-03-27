@@ -1,0 +1,26 @@
+<h1>Listing players</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Race</th>
+    <th>Size</th>
+    <th>Age</th>
+
+    <th></th>
+  </tr>
+  <% @players.each do |player| %>
+    <tr>
+      <td><%= player.name %></td>
+      <td><%= player.race %></td>
+      <td><%= player.size %></td>
+      <td><%= player.age %></td>
+
+      <% player.quests.each do |quest| %>
+        <td><%= link_to quest.title, quest_path(quest) %></td>
+      <% end %>
+
+      <td><%= link_to 'Show', player_path(player) %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  race: MyString
+  size: MyString
+  age: MyString
+
+two:
+  race: MyString
+  size: MyString
+  age: MyString

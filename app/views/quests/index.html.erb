@@ -1,0 +1,20 @@
+<h1>Listing quests</h1>
+
+<table>
+  <tr>
+    <th>Quest name</th>
+    <th>Player</th>
+    <th></th>
+  </tr>
+  <% @quests.each do |quest| %>
+    <tr>
+      <td><%= link_to quest.title, quest_path(quest) %></td>
+      <% quest.players.each do |player| %>
+        <td><%= player.name %></td>
+        <td><%= link_to 'x', quest_delete_player_path(quest, player_id: player), method: :delete %></td>
+
+
+      <% end %>
+    </tr>
+  <% end %>
+</table>
