@@ -16,6 +16,7 @@ class PlayersController < ApplicationController
 
   def show
     @player = Player.find(params[:id])
+    cookies[:selected_player] = @player.id
   end
 
   private
