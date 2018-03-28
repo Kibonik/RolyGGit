@@ -6,15 +6,17 @@
     <th>Player</th>
     <th></th>
   </tr>
-  <% @quests.each do |quest| %>
+
+<% @player.quests.each do |quest| %>
+
     <tr>
       <td><%= link_to quest.title, quest_path(quest) %></td>
       <% quest.players.each do |player| %>
         <td><%= player.name %></td>
-        <td><%= link_to 'x', quest_delete_player_path(quest, player_id: player), method: :delete %></td>
 
 
       <% end %>
     </tr>
   <% end %>
 </table>
+<!--<td><9%= link_to 'x', quest_delete_player_path(quest, player_id: player), method: :delete %></td></tr> /!>

@@ -9,6 +9,8 @@
   </head>
 
   <body>
+  <HEADER>Selected player</HEADER>
+    <%= Player.find(cookies[:selected_player]).name %>
     <%= yield %>
   </body>
 </html>

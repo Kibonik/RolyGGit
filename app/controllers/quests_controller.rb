@@ -5,6 +5,7 @@ class QuestsController < ApplicationController
 
   def index
     @quests = Quest.all
+    @player = Player.find(cookies[:selected_player])
   end
 
   def create
