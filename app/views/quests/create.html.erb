@@ -4,3 +4,17 @@
 </p>
 
 
+<h2>Add a quest:</h2>
+<%= form_with(model: [ @player, @player.quests.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
