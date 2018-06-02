@@ -2,10 +2,10 @@ class QuestsController < ApplicationController
 
   before_action :set_quest, only: [:show, :delete_player]
   before_action :set_player, only: [:create, :delete_player]
+  before_action :set_player_selected, only: [:index, :show]
 
   def index
     @quests = Quest.all
-    @player = Player.find(cookies[:selected_player])
   end
 
   def create
@@ -34,4 +34,9 @@ class QuestsController < ApplicationController
   def set_player
     @player = Player.find(params[:player_id])
   end
+
+  def set_player_selected
+    @player = Player.find(cookies[:selected_player])
+  end
+
 end

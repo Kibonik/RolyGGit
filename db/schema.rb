@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180321165233) do
+ActiveRecord::Schema.define(version: 20180529144237) do
 
   create_table "players", force: :cascade do |t|
     t.string "name"
@@ -33,6 +33,38 @@ ActiveRecord::Schema.define(version: 20180321165233) do
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "weapon_adjectives", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "weapon_categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "weapon_names", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "weapon_types", force: :cascade do |t|
+    t.integer "weapon_category_id"
+    t.string "name"
+    t.integer "dist_min"
+    t.integer "dist_max"
+    t.integer "dmg_min"
+    t.integer "clip_min"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "dmg_max"
+    t.integer "clip_max"
+    t.index ["weapon_category_id"], name: "index_weapon_types_on_weapon_category_id"
   end
 
 end

@@ -1,6 +1,8 @@
 <h1>Listing players</h1>
-
-<table>
+<div class="container">
+  <div class="row align-items-start">
+<table class="table-bordered">
+  <tbody>
   <tr>
     <th>Name</th>
     <th>Race</th>
@@ -15,12 +17,23 @@
       <td><%= player.size %></td>
       <td><%= player.age %></td>
       <td><%= cookies[:selected_player] %></td>
-
-      <% player.quests.each do |quest| %>
-        <td><%= link_to quest.title, quest_path(quest) %></td>
-      <% end %>
-
+      <td><table class="table-bordered">
+        <tr>
+        <% player.quests.each do |quest| %>
+            <td>
+        <%= link_to quest.title, quest_path(quest) %>
+            </td>
+        <% end %>
+        </tr>
+      </table></td>
       <td><%= link_to 'Show', player_path(player) %></td>
-    </tr>
+      <td></td>
+
   <% end %>
+  </tbody>
 </table>
+
+  </div>  </div>
+
+
+

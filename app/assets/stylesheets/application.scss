@@ -13,5 +13,21 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+body {
+  background: url('https://i.pinimg.com/originals/93/0e/90/930e9038c192457fcba4e7c135565dc9.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #000;
+
+}
+div.container {
+   background-color: rgba(255, 255, 255, 0.8);
+   border-radius: 30px;
+   padding: 30px;
+
+ }

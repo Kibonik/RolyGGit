@@ -2,15 +2,15 @@
 <html>
   <head>
     <title>RolyG</title>
-    <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-  <HEADER>Selected player</HEADER>
-    <%= Player.find(cookies[:selected_player]).name %>
+  <body id="main">
+  <h1 class="display-4">RolyG</h1>
+  <div class="container">
+
     <%= yield %>
+  </div>
   </body>
 </html>
