@@ -8,12 +8,5 @@ class Weapons < ApplicationRecord
     @category = WeaponCategory.all
   end
 
-  def self.title
-    @title = WeaponName.all
-  end
-
-  def self.adjective
-    @adjective = WeaponAdjective.all
-  end
 
 end

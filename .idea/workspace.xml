@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/controllers/weapons_controller.rb" line="3" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f44b31-143d-4e9f-a7d8-b46c848999c6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/Polygon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/Weapons/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RolyG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RolyG.iml" afterDir="false" />
+    <list default="true" id="b6f44b31-143d-4e9f-a7d8-b46c848999c6" name="Default" comment="[#1] Test">
+      <change afterPath="$PROJECT_DIR$/db/migrate/20180602095509_drop_weapon_adjective.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20180602095659_drop_weapon_name.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/af69de58-1d0a-48bc-8fec-25e8117a8573.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/af69de58-1d0a-48bc-8fec-25e8117a8573.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/players_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/players_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/quests_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/quests_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/players/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/players/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/players/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/players/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/players/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/players/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/quests/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quests/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/quests/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quests/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/weapon_name.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/weapons.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/weapons.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20180524141402_create_weapon_names.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/weapon_names.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/weapon_name_test.rb" beforeDir="false" />
     </list>
     <ignored path="C:\Users\nikei\RubymineProjects\RolyG\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,6 +21,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RolyG@Development__RolyG.rcov" NAME="Development: RolyG Coverage Results" MODIFIED="1527176076045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="RolyG" />
   </component>
@@ -64,13 +52,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Rails RolyG: development" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="weapon_adjectives: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -79,90 +60,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="weapon_type.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="weapon_type.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/weapon_type.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="368">
               <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weapon_name.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/weapon_name.rb">
+      <file leaf-file-name="quest.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/quest.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weapon_adjectives" pinned="false" current-in-tab="false">
-        <entry file="das://af69de58-1d0a-48bc-8fec-25e8117a8573/schema/main/table/weapon_adjectives">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weapon_names" pinned="false" current-in-tab="false">
-        <entry file="das://af69de58-1d0a-48bc-8fec-25e8117a8573/schema/main/table/weapon_names">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="23">
+              <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="weapon_category.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/weapon_category.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weapon_adjective.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/weapon_adjective.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="48" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="weapons.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/weapons.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="207">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/Weapons/index.html.erb">
+      <file leaf-file-name="weapons_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/weapons_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            <state relative-caret-position="138">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+      <file leaf-file-name="20180602095509_drop_weapon_adjective.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20180602095509_drop_weapon_adjective.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20180529144237_add_dmg_max_to_weapon_type.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20180529144237_add_dmg_max_to_weapon_type.rb">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shop/index.html.erb">
+      <file leaf-file-name="20180524141334_create_weapon_categories.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20180524141334_create_weapon_categories.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="20180602095659_drop_weapon_name.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20180602095659_drop_weapon_name.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="46">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -194,15 +163,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Soccer" />
       </map>
     </option>
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/models/name.rb" />
         <option value="$PROJECT_DIR$/app/views/players/create.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20180319161344_create_players.rb" />
         <option value="$PROJECT_DIR$/app/models/quest.rb" />
@@ -248,9 +217,12 @@
         <option value="$PROJECT_DIR$/app/models/weapon_type.rb" />
         <option value="$PROJECT_DIR$/app/models/weapon_category.rb" />
         <option value="$PROJECT_DIR$/app/views/shop/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/weapons.rb" />
         <option value="$PROJECT_DIR$/app/models/weapon_adjective.rb" />
         <option value="$PROJECT_DIR$/app/models/weapon_name.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/weapons_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20180602095509_drop_weapon_adjective.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20180602095659_drop_weapon_name.rb" />
+        <option value="$PROJECT_DIR$/app/models/weapons.rb" />
       </list>
     </option>
   </component>
@@ -303,6 +275,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,27 +309,6 @@
             <path>
               <item name="RolyG" type="b2602c69:ProjectViewProjectNode" />
               <item name="RolyG" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="shop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RolyG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RolyG" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Weapons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RolyG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RolyG" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="welcome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RolyG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RolyG" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -375,7 +327,6 @@
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,6 +480,8 @@
       <workItem from="1527604716719" duration="566000" />
       <workItem from="1527778779922" duration="12592000" />
       <workItem from="1527871785083" duration="599000" />
+      <workItem from="1527931215269" duration="541000" />
+      <workItem from="1527932224790" duration="1365000" />
     </task>
     <task id="LOCAL-00001">
       <created>1522170481716</created>
@@ -593,11 +546,25 @@
       <option name="project" value="LOCAL" />
       <updated>1522685069251</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[#1] Test">
+      <created>1527931449940</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1527931449940</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[#1] Test">
+      <created>1527932835068</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1527932835068</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116860000" />
+    <option name="totallyTimeSpent" value="118766000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -611,14 +578,14 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49380806" visible="true" weight="0.2744361" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49380806" visible="true" weight="0.28249195" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49462944" weight="0.32922733" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50698173" side_tool="true" weight="0.31762066" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50805587" side_tool="true" weight="0.332211" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.2244898" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32996634" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785176" weight="0.32772166" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49194413" weight="0.3325792" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49194413" weight="0.332211" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973147" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49301827" visible="true" weight="0.31762066" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -677,6 +644,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/RolyGGit" />
     </ignored-roots>
@@ -686,9 +654,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="[#1] Test" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="202" height="227" key="Git.Branch.Popup" />
-    <state width="202" height="227" key="Git.Branch.Popup/1920.1080/1360.768" />
-    <state width="202" height="227" key="Git.Branch.Popup@1920.1080@120dpi" />
+    <state width="236" height="261" key="Git.Branch.Popup" />
+    <state width="236" height="261" key="Git.Branch.Popup/1920.1080/1360.768" />
+    <state width="236" height="261" key="Git.Branch.Popup@1920.1080@120dpi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -696,32 +664,11 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://af69de58-1d0a-48bc-8fec-25e8117a8573/schema/main/table/quests">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://af69de58-1d0a-48bc-8fec-25e8117a8573/schema/main/table/sqlite_sequence">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/weapon/index.js.erb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/quest.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -735,12 +682,8 @@
     <entry file="file://$PROJECT_DIR$/app/views/players/jj.erb" />
     <entry file="file://$PROJECT_DIR$/app/views/players/index.coffee" />
     <entry file="file://$PROJECT_DIR$/app/views/players/index.html.coffee" />
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/welcome.coffee">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/weapons.coffee">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/welcome.coffee" />
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/weapons.coffee" />
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -796,9 +739,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180528150954_rename_weapon_to_weapons.rb" />
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/weapons.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/weapons.scss" />
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -827,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://af69de58-1d0a-48bc-8fec-25e8117a8573/schema/main/table/weapon_categories">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -842,41 +776,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180529143942_add_dmg_max_to_weapon_type.rb" />
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180523145427_create_weapon_types.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180529144237_add_dmg_max_to_weapon_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180524141334_create_weapon_categories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180524141402_create_weapon_names.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180524141424_create_weapon_adjectives.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180523145427_create_weapon_types.rb" />
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180524141424_create_weapon_adjectives.rb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -891,13 +792,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/shop_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/shop_controller.rb" />
     <entry file="das://af69de58-1d0a-48bc-8fec-25e8117a8573/schema/main/table/weapon_types">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -912,31 +807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/weapons_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/weapon_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://af69de58-1d0a-48bc-8fec-25e8117a8573/schema/main/table/weapon_adjectives">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/weapon_category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -947,41 +821,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/Weapons/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/Weapons/index.html.erb" />
+    <entry file="file://$PROJECT_DIR$/app/views/shop/index.html.erb" />
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+    <entry file="file://$PROJECT_DIR$/app/models/weapon_adjective.rb" />
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/weapons_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        <state relative-caret-position="138">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shop/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180602095509_drop_weapon_adjective.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="46">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180529144237_add_dmg_max_to_weapon_type.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180524141402_create_weapon_names.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180524141334_create_weapon_categories.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/weapon_name.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180602095659_drop_weapon_name.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/quest.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/weapon_category.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/weapons.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/weapon_adjective.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/weapon_type.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/weapon_name.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="368">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
