@@ -5,5 +5,4 @@ class WeaponsController < ApplicationController
 
   def show
   end
-
 end
