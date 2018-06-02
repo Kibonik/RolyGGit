@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dist_min: 1
+  dist_max: 1
+  dmg_min: 1
+  dmg_min: 1
+  clip_min: 1
+  clip_min: 1
+
+two:
+  name: MyString
+  dist_min: 1
+  dist_max: 1
+  dmg_min: 1
+  dmg_min: 1
+  clip_min: 1
+  clip_min: 1

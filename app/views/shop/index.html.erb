@@ -1,0 +1,22 @@
+<div class="row">
+  <table class="table table-sm">
+    <thead>
+    <tr>
+      <th scope="col">Прилагательное</th>
+      <th scope="col">Тип</th>
+      <th scope="col">Категория</th>
+      <th scope="col">Дистанция</th>
+      <th scope="col">Урон</th>
+      <th scope="col">Обойма</th>
+    </tr>
+  <% 5.times do  %>
+    <% weapon_item = @weapons.type.randomize %>
+    <tr>
+      <td><%= @weapons.adjective.randomize %> <%= @weapons.title.randomize %></td>
+      <% weapon_item.each do |item|  %>
+         <td><%=item%></td>
+        <% end %>
+    </tr>
+  <% end %>
+  </table>
+</div>

@@ -1,0 +1,18 @@
+
+  <h1>Select player</h1>
+  <table class="bg-dark">
+      <% @players.each do |player| %>
+      <button type="button" class="btn btn-outline-primary">
+        <%= link_to player.name, player_path(player) %>
+      </button>
+      <% end %>
+  </table>
+  <select class="custom-select custom-select-lg mb-3">
+    <option selected>Open this select menu</option>
+    <% @players.each do |player| %>
+      <option value="<%=player_path(player) %>"><%=  player.name %></option>
+    <% end %>
+  </select>
+  <button type="button" class="btn btn-outline-primary">
+    <a href=#>dd</a>
+  </button>
