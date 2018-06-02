@@ -1,5 +1,4 @@
 class PlayersController < ApplicationController
-
   def index
     @players = Player.all
   end
@@ -9,7 +8,6 @@ class PlayersController < ApplicationController
 
   def create
     @player = Player.new(article_params)
-
     @player.save
     redirect_to @player
   end

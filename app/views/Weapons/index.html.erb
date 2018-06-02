@@ -1,0 +1,41 @@
+
+
+  <div class="row ">
+    <table class="table-bordered table-striped col-sm">
+      <thead><tr><th scope="col">Type</th></tr></thead>
+      <% @weapons.type.each do |typ| %>
+        <tr><td>
+          <%= typ.name %>
+        </td></tr>
+      <% end %>
+
+    </table>
+
+    <table class="table-bordered table-striped col-sm">
+      <thead><tr><th scope="col">Category</th></tr></thead>
+      <% @weapons.category.each do |cat| %>
+        <tr><td>
+          <%= cat.name %>
+        </td></tr>
+      <% end %>
+
+    </table>
+    <table class="table-bordered table-striped col-sm">
+      <thead><tr><th scope="col">Name</th></tr></thead>
+      <% @weapons.title.each do |tit| %>
+        <tr><td>
+          <%= tit.name %>
+        </td></tr>
+      <% end %>
+
+    </table>
+    <table class="table-bordered table-striped col-sm">
+      <thead><tr><th scope="col">Adjective</th></tr></thead>
+      <% @weapons.adjective.each do |adj| %>
+        <tr><td>
+          <%= adj.name %>
+        </td></tr>
+      <% end %>
+
+    </table>
+  </div>
