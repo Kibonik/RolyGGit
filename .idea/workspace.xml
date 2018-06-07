@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6f44b31-143d-4e9f-a7d8-b46c848999c6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RolyG.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RolyG.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/af69de58-1d0a-48bc-8fec-25e8117a8573.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/af69de58-1d0a-48bc-8fec-25e8117a8573.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/shop.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/shop.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/players_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/players_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/shop_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/shop_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/weapons_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/weapons_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/weapon_name.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/weapon_name.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/weapons.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/weapons.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/Weapons/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Weapons/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/players/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/players/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/players/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/players/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/players/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/players/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/quests/create.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quests/create.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/quests/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quests/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/quests/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/quests/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shop/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shop/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-    </list>
+    <list default="true" id="b6f44b31-143d-4e9f-a7d8-b46c848999c6" name="Default" comment="" />
     <ignored path="C:\Users\nikei\RubymineProjects\RolyG\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,8 +41,8 @@
       <file leaf-file-name="weapon_name.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/weapon_name.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="184">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -204,11 +180,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20180602095509_drop_weapon_adjective.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180602095659_drop_weapon_name.rb" />
         <option value="$PROJECT_DIR$/app/models/weapons.rb" />
-        <option value="$PROJECT_DIR$/app/models/weapon_name.rb" />
         <option value="$PROJECT_DIR$/app/views/shop/randomize.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/shop_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/shop/index.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/weapon_name.rb" />
       </list>
     </option>
   </component>
@@ -440,7 +416,7 @@
       <workItem from="1527949230513" duration="4277000" />
       <workItem from="1527953869408" duration="405000" />
       <workItem from="1528294606011" duration="2079000" />
-      <workItem from="1528395513851" duration="263000" />
+      <workItem from="1528395513851" duration="352000" />
     </task>
     <task id="LOCAL-00001">
       <created>1522170481716</created>
@@ -526,11 +502,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527933835204</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[#1] Test">
+      <created>1528395793655</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1528395793655</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140468000" />
+    <option name="totallyTimeSpent" value="140557000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,9 +603,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="[#1] Test" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="240" height="265" key="Git.Branch.Popup" />
-    <state width="240" height="265" key="Git.Branch.Popup/1920.1080/1360.768" />
-    <state width="240" height="265" key="Git.Branch.Popup@1920.1080@120dpi" />
+    <state width="246" height="271" key="Git.Branch.Popup" />
+    <state width="246" height="271" key="Git.Branch.Popup/1920.1080/1360.768" />
+    <state width="246" height="271" key="Git.Branch.Popup@1920.1080@120dpi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -884,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/weapon_name.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
