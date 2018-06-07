@@ -2,7 +2,7 @@
   <table class="table table-sm">
     <thead>
     <tr>
-      <th scope="col">Прилагательное</th>
+      <th scope="col">Имя</th>
       <th scope="col">Тип</th>
       <th scope="col">Категория</th>
       <th scope="col">Дистанция</th>
@@ -12,11 +12,13 @@
   <% 5.times do  %>
     <% weapon_item = @weapons.type.randomize %>
     <tr>
-      <td><%= @weapons.adjective.randomize %> <%= @weapons.title.randomize %></td>
+      <td><%= WeaponName.randomize %></td>
       <% weapon_item.each do |item|  %>
-         <td><%=item%></td>
-        <% end %>
+        <td><%=item%></td>
+      <% end %>
     </tr>
   <% end %>
   </table>
+  <%= link_to "Рандомь", @random_weapon, remote: true, method: :post %>
+
 </div>
