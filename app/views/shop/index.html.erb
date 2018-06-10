@@ -1,4 +1,7 @@
 <div class="row">
+  <a class="randomAction">Рандомь сука</a>
+</div>
+<div class="row">
   <table class="table table-sm">
     <thead>
     <tr>
@@ -9,7 +12,7 @@
       <th scope="col">Урон</th>
       <th scope="col">Обойма</th>
     </tr>
-  <% 5.times do  %>
+
     <% weapon_item = @weapons.type.randomize %>
     <tr>
       <td><%= WeaponName.randomize %></td>
@@ -17,7 +20,9 @@
         <td><%=item%></td>
       <% end %>
     </tr>
-  <% end %>
   </table>
+
+</div>
+<div class="row" id="random">
 
 </div>
