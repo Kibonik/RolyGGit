@@ -4,12 +4,21 @@ class PlayersController < ApplicationController
   end
 
   def new
+    @player = Player.new
+
   end
 
   def create
     @player = Player.new(article_params)
-    @player.save
-    redirect_to @player
+    if @player.save
+      redirect_to new_player_path
+    else
+      # This line overrides the default rendering behavior, which
+      # would have been to render the "create" view.
+      render "new"
+    end
+
+
   end
 
   def show

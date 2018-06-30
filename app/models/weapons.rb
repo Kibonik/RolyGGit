@@ -8,8 +8,8 @@ class Weapons < ApplicationRecord
     @category = WeaponCategory.all
   end
 
-  #def self.title
-   # @title = WeaponName
-  #end
+  def self.title
+    @title = WeaponName
+  end
 
 end

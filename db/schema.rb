@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180602095659) do
+ActiveRecord::Schema.define(version: 20180624130534) do
 
   create_table "players", force: :cascade do |t|
     t.string "name"
@@ -33,6 +33,20 @@ ActiveRecord::Schema.define(version: 20180602095659) do
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "weapon_addon_types", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "weapon_addons", force: :cascade do |t|
+    t.string "name"
+    t.text "text"
+    t.integer "dmg"
+    t.integer "dist"
+    t.integer "clip"
+    t.integer "weapon_addon_type_id"
+    t.index ["weapon_addon_type_id"], name: "index_weapon_addons_on_weapon_addon_type_id"
   end
 
   create_table "weapon_categories", force: :cascade do |t|

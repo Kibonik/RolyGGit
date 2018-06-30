@@ -1,0 +1,8 @@
+<% @weapons.type.randomize.each do |item| %>
+  <tr>
+  <% item.each do |key,val| %>
+      <td><%= val %></td>
+  <% end %>
+  </tr>
+<% end %>
+

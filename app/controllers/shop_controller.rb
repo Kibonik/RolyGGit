@@ -4,6 +4,9 @@ class ShopController < ApplicationController
   end
 
   def randomize
-    @random_weapon = rand(10)
+    @weapons = Weapons.all
+    @botiono = 'работает'
+
+
   end
 end

@@ -152,6 +152,9 @@ GEM
     selenium-webdriver (3.11.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
+    simple_form (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     spicy-proton (2.1.0)
       bindata (~> 2.3)
     sprockets (3.7.1)
@@ -206,6 +209,7 @@ DEPENDENCIES
   rails (~> 5.1.5)
   sass-rails (~> 5.0)
   selenium-webdriver
+  simple_form
   spicy-proton
   sqlite3
   tr4n5l4te

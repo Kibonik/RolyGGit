@@ -7,8 +7,12 @@ Rails.application.routes.draw do
   resources :players
   resources :quests
   resources :weapons
-  resources :shop
-  delete '/quests/:id/delete_player', to: 'quests#delete_player', as: 'quest_delete_player'
+  resources :shop do
+  collection do
+    get :randomize
+    end
+  end
+  # delete '/quests/:id/delete_player', to: 'quests#delete_player', as: 'quest_delete_player'
 
   root 'welcome#index'
 end
